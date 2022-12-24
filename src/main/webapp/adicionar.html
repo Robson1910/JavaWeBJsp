@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Adicionar</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<style>
+body {
+	background: #74ebd5;
+	background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
+	background: linear-gradient(to right, #74ebd5, #ACB6E5);
+	min-height: 100vh;
+}
+</style>
+</head>
+<body>
+	<main style="margin: 1%">
+		<h4>Novo usuário</h4>
+		<div class="row">
+			<div class="col col s12 m8 l6 z-depth-6 card-panel">
+				<form class="login-form" name="frmContato" action="insert">
+					<div class="input-field col s12">
+						<i class="mdi-action-assignment-ind prefix"></i> <input
+							name="nome" type="text"> <label for="nome"
+							data-error="wrong" data-success="right" class="center-align">Nome</label>
+					</div>
+					<div class="input-field col s12">
+						<i class="mdi-av-subtitles prefix"></i> <input name="cpf"
+							type="text"> <label for="cpf" data-error="wrong"
+							data-success="right" class="center-align">CPF</label>
+					</div>
+					<div class="input-field col s12">
+						<i class="mdi-communication-quick-contacts-dialer prefix"></i> <input
+							name="telefone" type="text"> <label for="telefone"
+							data-error="wrong" data-success="right" class="center-align">Telefone</label>
+					</div>
+					<div class="input-field col s12">
+						<i class="mdi-communication-quick-contacts-mail prefix"></i> <input
+							name="email" type="text"> <label for="email"
+							data-error="wrong" data-success="right" class="center-align">Email</label>
+					</div>
+				</form>
+				<div class="row">
+					<div class="input-field col s12">
+						<a href="javascript:validar()" class="btn waves-effect waves-light col s12">Cadastrar</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 m6 l6">
+						<p class="margin medium-small">
+							<a href="main">Página inicial</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="scripts/validarCadastro.js"></script>
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">	
+	</script>
+</body>
+</html>

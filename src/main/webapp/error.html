@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Error</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="styLesheet" href="style/custom.css">
+</head>
+<body>
+	<div class="login-error">
+		<div class="form-error">
+			<h1 style="color: red">Usuário não encontrado!!</h1>
+			<button onclick="location.href='index.html'">Página inicial</button>
+		</div>
+	</div>
+	<script>
+		let resposta = confirm("Usuário não encontrado!!!")
+		if (resposta === true) {
+			window.location.href = "index.html"
+		}
+	</script>
+</body>
+</html>
